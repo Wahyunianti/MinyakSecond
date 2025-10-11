@@ -451,11 +451,11 @@ export default function App() {
                   key={i}
                   className="bg-white shadow-xl hover:shadow-2xl rounded-2xl p-6 text-left transition-all duration-300 ease-in-out"
                 >
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="w-14 h-14 rounded-full border-2 border-yellow-400"
+                      className="size-30  md:size-14 rounded-full border-2 border-yellow-400"
                     />
                     <div>
                       <p className="font-semibold text-gray-800">{item.name}</p>
