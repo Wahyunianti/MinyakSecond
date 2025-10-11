@@ -354,15 +354,17 @@ export default function App() {
               <div className='relative h-full w-full py-8 md:pr-8'>
                 <div className="relative h-full rounded-2xl p-[6px] bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 shadow-xl overflow-hidden">
                   <div className="h-full w-full rounded-2xl overflow-hidden bg-white">
-                    <iframe
-                      title="Lokasi Layanan"
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253795.6148400271!2d106.2742946!3d-6.321836300000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e3ee5cd8fef5%3A0x1fcc1d4db03adc76!2sTerima%20minyak%20jelantah%20(MINYAK%20SECOND)!5e0!3m2!1sid!2sid!4v1760185145414!5m2!1sid!2sid"
-                      width="100%"
-                      height="100%"
-                      loading="lazy"
-                      className="border-0 w-full h-full rounded-2xl"
-                      allowFullScreen
-                    ></iframe>
+                   <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+  <div className="h-full w-full rounded-2xl bg-white overflow-hidden">
+    <iframe
+      title="Lokasi Layanan"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253795.6148400271!2d106.2742946!3d-6.321836300000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e3ee5cd8fef5%3A0x1fcc1d4db03adc76!2sTerima%20minyak%20jelantah%20(MINYAK%20SECOND)!5e0!3m2!1sid!2sid!4v1760185145414!5m2!1sid!2sid"
+      loading="lazy"
+      allowFullScreen
+      className="w-full h-full border-0 rounded-2xl"
+    ></iframe>
+  </div>
+</div>
                   </div>
                 </div>
 
