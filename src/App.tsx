@@ -530,7 +530,7 @@ export default function App() {
               <h3 className="text-lg font-semibold mb-4">Informasi Kontak</h3>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-yellow-400 mt-0.5" />
+                  <MapPin className="w-10 h-10 text-yellow-400 mt-0.5" />
                   <span>
                     <span className="font-semibold text-white">Alamat:</span>
                     <br />
