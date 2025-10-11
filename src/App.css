@@ -9,6 +9,11 @@
   padding: 0;
   overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .fontGede {
