@@ -17,6 +17,12 @@ import {
   PhoneCall,
 } from "lucide-react";
 import { IoPaperPlaneOutline } from "react-icons/io5";
+import testi2 from './assets/testimoni/2.jpeg'
+import testi3 from './assets/testimoni/3.jpeg'
+import testi5 from './assets/testimoni/5.jpeg'
+import testi4 from './assets/testimoni/4.jpeg'
+
+
 
 function Section({ children, id }: { children: React.ReactNode; id?: string }) {
   const controls = useAnimation();
@@ -126,7 +132,7 @@ export default function App() {
     {
       name: "Ibu Sari Wijaya",
       location: "Taman Adiyasa Blok A",
-      image: "https://images.unsplash.com/photo-1595872018818-97555653a011",
+      image: testi5,
       rating: 5,
       quote:
         "Pelayanan sangat memuaskan! Tim datang tepat waktu dan sangat profesional. Minyak jelantah saya diambil dengan bersih tanpa meninggalkan bau.",
@@ -134,15 +140,15 @@ export default function App() {
     {
       name: "Pak Budi Santoso",
       location: "Taman Adiyasa Blok C",
-      image: "https://images.unsplash.com/photo-1595872018818-97555653a011",
+      image: testi2,
       rating: 5,
       quote:
         "Sudah 6 bulan menggunakan layanan ini. Sangat membantu dan gratis! Recommended banget untuk tetangga-tetangga yang lain.",
     },
     {
-      name: "Ibu Maya Putri",
+      name: "Mas Ahmad Fauzi",
       location: "Taman Adiyasa Blok F",
-      image: "https://images.unsplash.com/photo-1595872018818-97555653a011",
+      image: testi3,
       rating: 5,
       quote:
         "Awalnya ragu, tapi setelah coba ternyata benar-benar gratis dan berkualitas. Sekarang jadi rutin setiap bulan!",
@@ -150,7 +156,7 @@ export default function App() {
     {
       name: "Pak Agus Rahman",
       location: "Taman Adiyasa Blok H",
-      image: "https://images.unsplash.com/photo-1595872018818-97555653a011",
+      image: testi4,
       rating: 5,
       quote:
         "Layanan yang sangat membantu lingkungan. Tim sangat ramah dan proses pengambilan cepat. Terima kasih MinyakSecond!",
@@ -354,17 +360,17 @@ export default function App() {
               <div className='relative h-full w-full py-8 md:pr-8'>
                 <div className="relative h-full rounded-2xl p-[6px] bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 shadow-xl overflow-hidden">
                   <div className="h-full w-full rounded-2xl overflow-hidden bg-white">
-                   <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
-  <div className="h-full w-full rounded-2xl bg-white overflow-hidden">
-    <iframe
-      title="Lokasi Layanan"
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253795.6148400271!2d106.2742946!3d-6.321836300000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e3ee5cd8fef5%3A0x1fcc1d4db03adc76!2sTerima%20minyak%20jelantah%20(MINYAK%20SECOND)!5e0!3m2!1sid!2sid!4v1760185145414!5m2!1sid!2sid"
-      loading="lazy"
-      allowFullScreen
-      className="w-full h-full border-0 rounded-2xl"
-    ></iframe>
-  </div>
-</div>
+                    <div className="w-full h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-xl">
+                      <div className="h-full w-full rounded-2xl bg-white overflow-hidden">
+                        <iframe
+                          title="Lokasi Layanan"
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d253795.6148400271!2d106.2742946!3d-6.321836300000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e3ee5cd8fef5%3A0x1fcc1d4db03adc76!2sTerima%20minyak%20jelantah%20(MINYAK%20SECOND)!5e0!3m2!1sid!2sid!4v1760185145414!5m2!1sid!2sid"
+                          loading="lazy"
+                          allowFullScreen
+                          className="w-full h-full border-0 rounded-2xl"
+                        ></iframe>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
