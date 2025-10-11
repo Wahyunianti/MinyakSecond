@@ -164,7 +164,7 @@ export default function App() {
   ];
 
   return (
-    <div className="font-sans text-gray-800 relative">
+    <div className="font-sans text-gray-800 relative overflow-auto scrollbar-hide">
       <header className="fixed top-0 left-0 w-full z-[9999] bg-white shadow-xl">
         <div className="flex justify-between items-center px-6 md:px-70 py-4">
           <img src={logosecond} height={10} width={130} alt="" />
@@ -451,12 +451,13 @@ export default function App() {
                   key={i}
                   className="bg-white shadow-xl hover:shadow-2xl rounded-2xl p-6 text-left transition-all duration-300 ease-in-out"
                 >
-                  <div className="flex flex-col md:flex-row items-center gap-4 mb-4">
+                  <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 mb-4">
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="size-30  md:size-14 rounded-full border-2 border-yellow-400"
+                      className="w-30 h-30 md:w-14 md:h-14 rounded-full border-2 border-yellow-400 object-cover"
                     />
+
                     <div>
                       <p className="font-semibold text-gray-800">{item.name}</p>
                       <p className="text-sm text-gray-500">{item.location}</p>

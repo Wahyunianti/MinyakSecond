@@ -76,3 +76,11 @@
   animation: bergerak 10s linear infinite;
   transform-origin: center;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* untuk Internet Explorer dan Edge lama */
+  scrollbar-width: none;     /* untuk Firefox */
+}
