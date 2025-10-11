@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cantora+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Cantora+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+#root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.fontGede {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fontText {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.fontKecil {
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+} 
+
+@keyframes bergerak {
+  0%   { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bergerak2 {
+  0%   { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bergerak3 {
+  0%   { transform: translate(); }
+  100% { transform: rotate(3deg); }
+}
+
+.areaMinyak{
+  cursor: pointer;
+}
+
+.areaMinyak:hover .daun1 {
+  animation: bergerak 10s linear infinite;
+  transform-origin: center;
+}
+
+.areaMinyak:hover .daun2 {
+  animation: bergerak2 10s linear infinite;
+  transform-origin: center;
+}
+
+.areaMinyak:hover .minyak {
+  transform: scale(1.05);
+}
+
+.whatsapp svg {
+  fill: green;
+  color: greenyellow;
+}
+
+.cardBenefit:hover .cardIsian {
+  animation: bergerak 10s linear infinite;
+  transform-origin: center;
+}
