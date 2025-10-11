@@ -43,7 +43,7 @@ function Section({ children, id }: { children: React.ReactNode; id?: string }) {
       id={id}
       initial={{ opacity: 0, y: 60 }}
       animate={controls}
-      className="w-full"
+      className="w-full relative z-0"
     >
       {children}
     </motion.section>
@@ -63,8 +63,8 @@ export default function App() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const { name, address, minyak } = formData;
-    const phoneNumber = '6283151060262';
-    const text = `Halo, saya ${name}. ingin menjual minyak sebesar ${minyak} dengan alamat pengambilan ${address}`;
+    const phoneNumber = '6289654092662';
+    const text = `Halo, Nama Saya ${name}. Mau menjual minyak sebesar ${minyak} dengan alamat pengambilan ${address}`;
     const url = `https://wa.me/${phoneNumber}?text=${text}`;
     window.open(url, '_blank');
   };
@@ -159,7 +159,7 @@ export default function App() {
 
   return (
     <div className="font-sans text-gray-800 relative">
-      <header className="fixed w-full z-50 bg-white shadow-xl">
+      <header className="fixed top-0 left-0 w-full z-[9999] bg-white shadow-xl">
         <div className="flex justify-between items-center px-6 md:px-70 py-4">
           <img src={logosecond} height={10} width={130} alt="" />
 
@@ -264,7 +264,7 @@ export default function App() {
               className="w-full bg-gradient-to-r cursor-pointer items-center justify-center flex gap-3 from-yellow-400 to-orange-500 text-white font-semibold text-md py-2 hover:opacity-90 transition"
             >
               <span>
-                          <IoPaperPlaneOutline size={24} />
+                <IoPaperPlaneOutline size={24} />
               </span>
               Kirim Permintaan Pengambilan
             </button>
@@ -366,7 +366,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="absolute hidden md:visible bottom-4 right-4 bg-white rounded-full shadow-lg px-4 py-3 text-center text-sm font-semibold text-yellow-600">
+                <div className="absolute hidden md:flex bottom-4 right-4 bg-white rounded-full shadow-lg px-4 py-3 text-center text-sm font-semibold text-yellow-600">
                   <div className='m-2'>
                     <span className="text-lg font-bold">15km</span> <br /> <span className='text-black'>Radius Layanan</span>
                   </div>
