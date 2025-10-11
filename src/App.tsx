@@ -182,24 +182,24 @@ export default function App() {
           </button>
         </div>
 
-        <motion.div
-          initial={{ height: 0, opacity: 0 }}
-          animate={isMenuOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
-          className="overflow-hidden md:hidden bg-white shadow-inner"
+        <div
+          className={`
+    overflow-hidden transition-all duration-500 flex flex-col px-6 space-y-4 ease-in-out border-t
+    ${isMenuOpen ? 'max-h-96 opacity-100 py-4' : 'max-h-0 opacity-0'}
+  `}
         >
-          <div className="flex flex-col space-y-4 px-6 py-4 border-t">
-            {menuItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={() => setIsMenuOpen(false)}
-                className="text-gray-700 hover:text-yellow-600 transition-colors"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </motion.div>
+          {menuItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-gray-700 hover:text-yellow-600 transition-colors"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+
       </header>
 
       {/* Hero */}
