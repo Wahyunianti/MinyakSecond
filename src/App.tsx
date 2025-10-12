@@ -1,5 +1,5 @@
 import './App.css'
-import minyaktelon from './assets/minyaktelon.jpg'
+import minyaktelon from './assets/minyak-jelantah.jpeg'
 import logosecond from './assets/logo-second.webp'
 import petik from './assets/petik.svg'
 import { FaMapMarkerAlt, FaClock, FaPhoneAlt } from "react-icons/fa";
@@ -70,7 +70,7 @@ export default function App() {
     e.preventDefault();
     const { name, address, minyak } = formData;
     const phoneNumber = '6289654092662';
-    const text = `Halo, Nama Saya ${name}. Mau menjual minyak sebesar ${minyak} dengan alamat pengambilan ${address}`;
+    const text = `Halo, Nama Saya ${name}. Mau menjual minyak sebanyak ${minyak} dengan alamat pengambilan ${address}`;
     const url = `https://wa.me/${phoneNumber}?text=${text}`;
     window.open(url, '_blank');
   };
@@ -115,8 +115,8 @@ export default function App() {
       bg: "bg-yellow-100",
     },
     {
-      title: "Kualitas Terjamin",
-      desc: "Proses pengolahan menggunakan teknologi modern dan standar internasional",
+      title: "Terpercaya",
+      desc: "Terpercaya di wilayah kami",
       icon: <FaStar className="text-orange-400" />,
       bg: "bg-orange-100",
     },
@@ -218,7 +218,7 @@ export default function App() {
             Layanan pengambilan minyak bekas gratis untuk lingkungan yang lebih bersih dan berkelanjutan.
           </p>
           <div className="flex justify-center flex-col md:flex-row mb-8 gap-5 flex-wrap">
-            <span className="px-6 py-3 rounded-full bg-white font-semibold text-md shadow-lg">♻️ 100% Daur Ulang</span>
+            <span className="px-6 py-3 rounded-full bg-white font-semibold text-md shadow-lg">♻️ For Biodesel</span>
             <span className="px-6 py-3 rounded-full bg-white font-semibold text-md shadow-lg">🌱 Ramah Lingkungan</span>
             <span className="px-6 py-3 rounded-full bg-white  font-semibold text-md shadow-lg">⭐ Layanan Terpercaya</span>
           </div>
@@ -238,6 +238,7 @@ export default function App() {
           <h3 className="text-4xl font-bold mb-3">Ajukan Pengambilan Minyak Jelantah</h3>
           <p className="text-gray-600 mb-8 text-xl">Isi form di bawah ini dan tim kami akan menghubungi Anda</p>
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-xl space-y-4">
+            <p className="text-2xl font-bold mb-7">Form Chat WA</p>
             <input
               type="text"
               name="name"
@@ -292,7 +293,7 @@ export default function App() {
               Area Layanan Kami
             </h2>
             <p className="text-center text-xl text-gray-600 mb-12">
-              Kami melayani pengambilan minyak jelantah di sekitar area Tangerang, Banten
+              Kami melayani pengambilan minyak jelantah di sekitar area Parung Panjang Tangerang, Banten
             </p>
 
             <div className="flex flex-col md:flex-row h-min md:h-125 gap-8 items-start md:px-50 ">
