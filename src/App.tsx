@@ -130,36 +130,36 @@ export default function App() {
 
   const testimonials = [
     {
-      name: "Ibu Sari Wijaya",
-      location: "Taman Adiyasa Blok A",
+      name: "Yuli Thesastro",
+      location: "Review From Google Maps",
       image: testi5,
       rating: 5,
       quote:
-        "Pelayanan sangat memuaskan! Tim datang tepat waktu dan sangat profesional. Minyak jelantah saya diambil dengan bersih tanpa meninggalkan bau.",
+        "Alhamdulilah dapet chanel minyak jelantah, bosnya lgsung meluncur sendiri loh keren...baik lagi..terima kasih semoga penjualan minyak ini sekalian berdonasi utk pembangunan mushola kami. Makasih pak🙏🙏🙏🙏😊 …",
     },
     {
-      name: "Pak Budi Santoso",
-      location: "Taman Adiyasa Blok C",
+      name: "Wawan Kurniawan",
+      location: "Review From Google Maps",
       image: testi2,
       rating: 5,
       quote:
-        "Sudah 6 bulan menggunakan layanan ini. Sangat membantu dan gratis! Recommended banget untuk tetangga-tetangga yang lain.",
+        "Ownernya  baik dan fast respon banget nih, sangat membantu kami dalam menggalangkan adana untuk peembangunan musholla An-Nafi'u Qaada. tks orang baik",
     },
     {
-      name: "Mas Ahmad Fauzi",
-      location: "Taman Adiyasa Blok F",
+      name: "CacaCyra Channel",
+      location: "Review From Google Maps",
       image: testi3,
       rating: 5,
       quote:
-        "Awalnya ragu, tapi setelah coba ternyata benar-benar gratis dan berkualitas. Sekarang jadi rutin setiap bulan!",
+        "Dengan ada nya jasa dr minyak second ibu2 jd terbantu, lingkungan pun jd bersih. Top lah pokoknya. Makasih Minyak Second..",
     },
     {
-      name: "Pak Agus Rahman",
-      location: "Taman Adiyasa Blok H",
+      name: "Ratna Sri Wulandari",
+      location: "Review From Google Maps",
       image: testi4,
       rating: 5,
       quote:
-        "Layanan yang sangat membantu lingkungan. Tim sangat ramah dan proses pengambilan cepat. Terima kasih MinyakSecond!",
+        "Respon cepat, proses tidak bertele-tele. Terimakasih.",
     },
   ];
 
