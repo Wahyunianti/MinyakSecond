@@ -211,10 +211,10 @@ export default function App() {
       {/* Hero */}
       <Section id="home">
         <div className="pt-40 pb-18 bg-gradient-to-br  from-lime-50 to-orange-50 text-center px-6">
-          <h2 className="text-3xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl md:text-6xl font-bold mb-6">
             Terima <span className="text-yellow-600">Minyak Jelantah</span> / UCO
           </h2>
-          <p className="text-gray-600 text-xl mb-6 md:w-1/2 mx-auto">
+          <p className="text-red-700 text-3xl font-bold mb-6 md:w-1/2 mx-auto">
             Layanan limbah minyak jelantah masyarakat, Jual minyak jelantah anda disini!, Kami jemput.
           </p>
           <div className="flex justify-center flex-col md:flex-row mb-8 gap-5 flex-wrap">
@@ -247,7 +247,7 @@ export default function App() {
               onChange={handleChange}
               required
               placeholder="Nama Lengkap"
-              className="w-full border border-slate-300 p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border text-xs border-slate-300 p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             />
             <input
               type="text"
@@ -257,7 +257,7 @@ export default function App() {
               required
 
               placeholder="Jumlah Minyak (contoh: 15 liter / 2 dirigen)"
-              className="w-full border border-slate-300 p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border text-xs border-slate-300 p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             />
             <textarea
               name="address"
@@ -265,7 +265,7 @@ export default function App() {
               onChange={handleChange}
               required
               placeholder="Alamat Lengkap untuk Pengambilan"
-              className="w-full h-32 border border-slate-300 p-3 resize-none focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full h-32 border text-xs border-slate-300 p-3 resize-none focus:outline-none focus:ring-2 focus:ring-yellow-400"
             ></textarea>
             <button
               type="submit"
