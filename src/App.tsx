@@ -215,7 +215,7 @@ export default function App() {
             Terima <span className="text-yellow-600">Minyak Jelantah</span> / UCO
           </h2>
           <p className="text-gray-600 text-xl mb-6 md:w-1/2 mx-auto">
-            Layanan pengambilan minyak bekas gratis untuk lingkungan yang lebih bersih dan berkelanjutan.
+            Layanan limbah minyak jelantah masyarakat, Jual minyak jelantah anda disini!, Kami jemput.
           </p>
           <div className="flex justify-center flex-col md:flex-row mb-8 gap-5 flex-wrap">
             <span className="px-6 py-3 rounded-full bg-white font-semibold text-md shadow-lg">♻️ For Biodesel</span>
@@ -236,7 +236,8 @@ export default function App() {
       <Section id="layanan">
         <div className="py-18 bg-gradient-to-br from-yellow-100 to-orange-100 text-center px-6">
           <h3 className="text-4xl font-bold mb-3">Ajukan Pengambilan Minyak Jelantah</h3>
-          <p className="text-gray-600 mb-8 text-xl">Isi form di bawah ini dan tim kami akan menghubungi Anda</p>
+          <p className="text-gray-600 mb-4 text-xl">Isi form di bawah ini dan tim kami akan menghubungi Anda</p>
+          <p className="text-orange-800 mb-8 text-lg font-semibold">Minimal penjemputan 15 liter</p>
           <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-xl space-y-4">
             <p className="text-2xl font-bold mb-7">Form Chat WA</p>
             <input
@@ -255,7 +256,7 @@ export default function App() {
               onChange={handleChange}
               required
 
-              placeholder="Jumlah Minyak (contoh: 5 liter, 2 jerigen)"
+              placeholder="Jumlah Minyak (contoh: 15 liter / 2 dirigen)"
               className="w-full border border-slate-300 p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             />
             <textarea
