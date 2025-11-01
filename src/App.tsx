@@ -294,7 +294,7 @@ export default function App() {
               Area Layanan Kami
             </h2>
             <p className="text-center text-xl text-gray-600 mb-12">
-              Kami melayani pengambilan minyak jelantah di sekitar area Parung Panjang Tangerang, Banten
+              Kami melayani pengambilan minyak jelantah di sekitar area Parung Panjang dan Tangerang, Banten
             </p>
 
             <div className="flex flex-col md:flex-row h-min md:h-125 gap-8 items-start md:px-50 ">
