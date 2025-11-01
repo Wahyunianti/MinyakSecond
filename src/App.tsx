@@ -215,7 +215,7 @@ export default function App() {
             Terima <span className="text-yellow-600">Minyak Jelantah</span> / UCO
           </h2>
           <p className="text-red-700 text-3xl font-bold mb-6 md:w-1/2 mx-auto">
-            Layanan limbah minyak jelantah masyarakat, Jual minyak jelantah anda disini!, Kami jemput.
+            Jual minyak jelantah anda disini!, Kami jemput.
           </p>
           <div className="flex justify-center flex-col md:flex-row mb-8 gap-5 flex-wrap">
             <span className="px-6 py-3 rounded-full bg-white font-semibold text-md shadow-lg">♻️ For Biodesel</span>
