@@ -1,167 +1,167 @@
 import './App.css'
-import minyaktelon from './assets/minyak-jelantah.jpeg'
-import logosecond from './assets/logo-second.webp'
-import petik from './assets/petik.svg'
-import { FaMapMarkerAlt, FaClock, FaPhoneAlt } from "react-icons/fa";
-import { FaTruck, FaShieldAlt, FaLeaf, FaGift, FaStar } from "react-icons/fa";
-import { Star } from "lucide-react";
-import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
-import {
-  Instagram,
-  MessageCircle,
-  MapPin,
-  Clock,
-  PhoneCall,
-} from "lucide-react";
-import { IoPaperPlaneOutline } from "react-icons/io5";
-import testi2 from './assets/testimoni/2.jpeg'
-import testi3 from './assets/testimoni/3.jpeg'
-import testi5 from './assets/testimoni/5.jpeg'
-import testi4 from './assets/testimoni/4.jpeg'
+// import minyaktelon from './assets/minyak-jelantah.jpeg'
+// import logosecond from './assets/logo-second.webp'
+// import petik from './assets/petik.svg'
+// import { FaMapMarkerAlt, FaClock, FaPhoneAlt } from "react-icons/fa";
+// import { FaTruck, FaShieldAlt, FaLeaf, FaGift, FaStar } from "react-icons/fa";
+// import { Star } from "lucide-react";
+// import React from "react";
+// import { motion, useAnimation } from "framer-motion";
+// import { useEffect, useState } from "react";
+// import { Menu, X } from "lucide-react";
+// import {
+//   Instagram,
+//   MessageCircle,
+//   MapPin,
+//   Clock,
+//   PhoneCall,
+// } from "lucide-react";
+// import { IoPaperPlaneOutline } from "react-icons/io5";
+// import testi2 from './assets/testimoni/2.jpeg'
+// import testi3 from './assets/testimoni/3.jpeg'
+// import testi5 from './assets/testimoni/5.jpeg'
+// import testi4 from './assets/testimoni/4.jpeg'
 
 
 
-function Section({ children, id }: { children: React.ReactNode; id?: string }) {
-  const controls = useAnimation();
+// function Section({ children, id }: { children: React.ReactNode; id?: string }) {
+//   const controls = useAnimation();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            controls.start({ opacity: 1, y: 0, transition: { duration: 0.7 } });
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       (entries) => {
+//         entries.forEach((entry) => {
+//           if (entry.isIntersecting) {
+//             controls.start({ opacity: 1, y: 0, transition: { duration: 0.7 } });
+//           }
+//         });
+//       },
+//       { threshold: 0.2 }
+//     );
 
-    const section = document.getElementById(id || "");
-    if (section) observer.observe(section);
-    return () => observer.disconnect();
-  }, [controls, id]);
+//     const section = document.getElementById(id || "");
+//     if (section) observer.observe(section);
+//     return () => observer.disconnect();
+//   }, [controls, id]);
 
-  return (
-    <motion.section
-      id={id}
-      initial={{ opacity: 0, y: 60 }}
-      animate={controls}
-      className="w-full relative z-0"
-    >
-      {children}
-    </motion.section>
-  );
-}
+//   return (
+//     <motion.section
+//       id={id}
+//       initial={{ opacity: 0, y: 60 }}
+//       animate={controls}
+//       className="w-full relative z-0"
+//     >
+//       {children}
+//     </motion.section>
+//   );
+// }
 
 export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [formData, setFormData] = useState({ name: '', address: '', minyak: '' });
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [formData, setFormData] = useState({ name: '', address: '', minyak: '' });
 
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const { name, address, minyak } = formData;
-    const phoneNumber = '6289654092662';
-    const text = `Halo, Nama Saya ${name}. Mau menjual minyak sebanyak ${minyak} dengan alamat pengambilan ${address}`;
-    const url = `https://wa.me/${phoneNumber}?text=${text}`;
-    window.open(url, '_blank');
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   const { name, address, minyak } = formData;
+  //   const phoneNumber = '6289654092662';
+  //   const text = `Halo, Nama Saya ${name}. Mau menjual minyak sebanyak ${minyak} dengan alamat pengambilan ${address}`;
+  //   const url = `https://wa.me/${phoneNumber}?text=${text}`;
+  //   window.open(url, '_blank');
+  // };
 
-  const menuItems = [
-    { name: "Beranda", href: "#home" },
-    { name: "Layanan", href: "#layanan" },
-    { name: "Area", href: "#area" },
-    { name: "Testimoni", href: "#testimoni" },
-    { name: "Kontak", href: "#kontak" },
-  ];
+  // const menuItems = [
+  //   { name: "Beranda", href: "#home" },
+  //   { name: "Layanan", href: "#layanan" },
+  //   { name: "Area", href: "#area" },
+  //   { name: "Testimoni", href: "#testimoni" },
+  //   { name: "Kontak", href: "#kontak" },
+  // ];
 
-  const features = [
-    {
-      title: "Pengambilan Gratis",
-      desc: "Tidak ada biaya sama sekali untuk layanan pengambilan minyak jelantah Anda",
-      icon: <FaTruck className="text-blue-500" />,
-      bg: "bg-blue-100",
-    },
-    {
-      title: "Jadwal Fleksibel",
-      desc: "Kami menyesuaikan waktu pengambilan dengan jadwal yang nyaman untuk Anda",
-      icon: <FaClock className="text-green-500" />,
-      bg: "bg-green-100",
-    },
-    {
-      title: "Layanan Terpercaya",
-      desc: "Tim profesional dengan pengalaman bertahun-tahun dalam pengelolaan limbah",
-      icon: <FaShieldAlt className="text-purple-500" />,
-      bg: "bg-purple-100",
-    },
-    {
-      title: "Ramah Lingkungan",
-      desc: "Membantu mengurangi pencemaran lingkungan melalui daur ulang yang tepat",
-      icon: <FaLeaf className="text-green-400" />,
-      bg: "bg-green-100",
-    },
-    {
-      title: "Bonus Menarik",
-      desc: "Dapatkan reward points untuk setiap pengumpulan minyak jelantah",
-      icon: <FaGift className="text-yellow-500" />,
-      bg: "bg-yellow-100",
-    },
-    {
-      title: "Terpercaya",
-      desc: "Terpercaya di wilayah kami",
-      icon: <FaStar className="text-orange-400" />,
-      bg: "bg-orange-100",
-    },
-  ];
+  // const features = [
+  //   {
+  //     title: "Pengambilan Gratis",
+  //     desc: "Tidak ada biaya sama sekali untuk layanan pengambilan minyak jelantah Anda",
+  //     icon: <FaTruck className="text-blue-500" />,
+  //     bg: "bg-blue-100",
+  //   },
+  //   {
+  //     title: "Jadwal Fleksibel",
+  //     desc: "Kami menyesuaikan waktu pengambilan dengan jadwal yang nyaman untuk Anda",
+  //     icon: <FaClock className="text-green-500" />,
+  //     bg: "bg-green-100",
+  //   },
+  //   {
+  //     title: "Layanan Terpercaya",
+  //     desc: "Tim profesional dengan pengalaman bertahun-tahun dalam pengelolaan limbah",
+  //     icon: <FaShieldAlt className="text-purple-500" />,
+  //     bg: "bg-purple-100",
+  //   },
+  //   {
+  //     title: "Ramah Lingkungan",
+  //     desc: "Membantu mengurangi pencemaran lingkungan melalui daur ulang yang tepat",
+  //     icon: <FaLeaf className="text-green-400" />,
+  //     bg: "bg-green-100",
+  //   },
+  //   {
+  //     title: "Bonus Menarik",
+  //     desc: "Dapatkan reward points untuk setiap pengumpulan minyak jelantah",
+  //     icon: <FaGift className="text-yellow-500" />,
+  //     bg: "bg-yellow-100",
+  //   },
+  //   {
+  //     title: "Terpercaya",
+  //     desc: "Terpercaya di wilayah kami",
+  //     icon: <FaStar className="text-orange-400" />,
+  //     bg: "bg-orange-100",
+  //   },
+  // ];
 
-  const stats = [
-    { value: "500+", label: "Pelanggan Puas" },
-    { value: "10,000L", label: "Minyak Terdaur Ulang" },
-    { value: "2 Tahun", label: "Pengalaman" },
-  ];
+  // const stats = [
+  //   { value: "500+", label: "Pelanggan Puas" },
+  //   { value: "10,000L", label: "Minyak Terdaur Ulang" },
+  //   { value: "2 Tahun", label: "Pengalaman" },
+  // ];
 
-  const testimonials = [
-    {
-      name: "Yuli Thesastro",
-      location: "Review From Google Maps",
-      image: testi5,
-      rating: 5,
-      quote:
-        "Alhamdulilah dapet chanel minyak jelantah, bosnya lgsung meluncur sendiri loh keren...baik lagi..terima kasih semoga penjualan minyak ini sekalian berdonasi utk pembangunan mushola kami. Makasih pak🙏🙏🙏🙏😊 …",
-    },
-    {
-      name: "Wawan Kurniawan",
-      location: "Review From Google Maps",
-      image: testi2,
-      rating: 5,
-      quote:
-        "Ownernya  baik dan fast respon banget nih, sangat membantu kami dalam menggalangkan adana untuk peembangunan musholla An-Nafi'u Qaada. tks orang baik",
-    },
-    {
-      name: "CacaCyra Channel",
-      location: "Review From Google Maps",
-      image: testi3,
-      rating: 5,
-      quote:
-        "Dengan ada nya jasa dr minyak second ibu2 jd terbantu, lingkungan pun jd bersih. Top lah pokoknya. Makasih Minyak Second..",
-    },
-    {
-      name: "Ratna Sri Wulandari",
-      location: "Review From Google Maps",
-      image: testi4,
-      rating: 5,
-      quote:
-        "Respon cepat, proses tidak bertele-tele. Terimakasih.",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "Yuli Thesastro",
+  //     location: "Review From Google Maps",
+  //     image: testi5,
+  //     rating: 5,
+  //     quote:
+  //       "Alhamdulilah dapet chanel minyak jelantah, bosnya lgsung meluncur sendiri loh keren...baik lagi..terima kasih semoga penjualan minyak ini sekalian berdonasi utk pembangunan mushola kami. Makasih pak🙏🙏🙏🙏😊 …",
+  //   },
+  //   {
+  //     name: "Wawan Kurniawan",
+  //     location: "Review From Google Maps",
+  //     image: testi2,
+  //     rating: 5,
+  //     quote:
+  //       "Ownernya  baik dan fast respon banget nih, sangat membantu kami dalam menggalangkan adana untuk peembangunan musholla An-Nafi'u Qaada. tks orang baik",
+  //   },
+  //   {
+  //     name: "CacaCyra Channel",
+  //     location: "Review From Google Maps",
+  //     image: testi3,
+  //     rating: 5,
+  //     quote:
+  //       "Dengan ada nya jasa dr minyak second ibu2 jd terbantu, lingkungan pun jd bersih. Top lah pokoknya. Makasih Minyak Second..",
+  //   },
+  //   {
+  //     name: "Ratna Sri Wulandari",
+  //     location: "Review From Google Maps",
+  //     image: testi4,
+  //     rating: 5,
+  //     quote:
+  //       "Respon cepat, proses tidak bertele-tele. Terimakasih.",
+  //   },
+  // ];
 
   return (
     <div className="w-full h-full grid place-items-center bg-red-400 font-extrabold text-lg">
